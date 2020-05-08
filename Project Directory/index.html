@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Tobar</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="center">Victor Tobar</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+<div class="col s6">
+      <div class="card">
+        <div class="card-image center-align">
+          <img class="img center-align" src="img/visual_circuit.PNG">
+        </div>
+        <div class="card-content">
+          <hr>
+          <h6 class="center"><a href="#">Circuit Analyzer</a></h6>
+          <hr>
+
+          <p></p>
+        </div>
+        <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width">
+            <li class="tab"><a class="active" href="#ca1">Summary</a></li>
+            <li class="tab"><a href="#ca2">Insipiration</a></li>
+            <li class="tab"><a href="#ca3">Skillset</a></li>
+          </ul>
+        </div>
+        <div class="card-content grey lighten-4">
+          <div id="ca1">Web-app which calculates node voltages in DC circuits. It sets up a system of linear equations and solves it by using Gaussian elimination. Does not support supernodes. User input is processed by using a grid and cycling through the available components. <br>
+          <a href="#modal1" class="modal-trigger">Complete Instructions</a></div>
+          <div id="ca2">I took a class on circuits and realized that the practice problems were very procedural. I wanted to practice JavaScript so I decided to code a webapp capable of correcting my homework.</div>
+          <div id="ca3">
+            <ul>
+              <li>- JavaScript</li>
+              <li>- CSS</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col s6">
+        <div class="card">
+          <div class="card-image center-align">
+            <img class="img center-align" src="img/pokemon.PNG" style="padding-top: 1.5rem;">
+          </div>
+          <div class="card-content">
+            <hr>
+            <h6 class="center"><a href="#">Pokemon Stats Analysis<br>& Machine Learning Models</a></h6>
+            <hr>
+            <p></p>
+          </div>
+          <div class="card-tabs">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a class="active" href="#p1">Summary</a></li>
+              <li class="tab"><a href="#p2">Inspiration</a></li>
+              <li class="tab"><a href="#p3">Skillset</a></li>
+            </ul>
+          </div>
+          <div class="card-content grey lighten-4">
+            <div id="p1">Data visualization of a Pokemon Dataset. Includes analysis of different machine learning models which predict if a Pokemon is Legendary based on stats, primary type and secondary type.<br> Contains comments outlining my though process.</div>
+            <div id="p2">I wanted to try some data visualization with seaborn. Also, I read a textbook on machine learning with sklearn and wanted to try out what I learned.</div>
+            <div id="p3">
+             
+              <ul>
+                <li><u>Python Libraries</u></li>
+                <li>- Seaborn</li>
+                <li>- Sklearn</li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h6>Circuit Analyzer Instructions</h6>
+            1. Wires are represented by dots, Resistors by R, Current Sources by I, Voltage Sources by V, and Ground by G.<br>
+            2. Click on the tiles of the grid to cycle through the available components. Right-click to clear.<br>
+            3. Every component other than wires must have exactly two connections, and they cannot be in corners.<br>
+            4. There must be exactly one Ground node, and it must be adjacent to <u>all</u> Voltage Sources. (No supernodes)<br>
+            5. After generating the circuit, give a numerical value to every input field generated.<br>
+            6. The direction of Current/Voltage Sources are predetermined. Enter a negative value if you want to inverse the direction.<br><br>
+            <u>Examples</u>
+            <div>Valid<br>
+              <img class="circuit-examples" src="img/valid.PNG" alt="">
+            </div>
+            <hr>
+            <div class="invalid-examples">
+              Invalid (Voltage Source in corner)<br>
+              <img class="circuit-examples" src="img/invalid1.PNG" alt=""><br>
+              <hr>
+              Invalid (Ground is not adjacent to all voltage sources)<br>
+              <img class="circuit-examples" src="img/invalid2.PNG" alt="">
+            </div>
+          </p>
+      </div>
+    </div>
+
+    
+        </div>
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
