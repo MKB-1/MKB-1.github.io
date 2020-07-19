@@ -1,8 +1,23 @@
 .img{
-    max-height: 325px;
+    height: 225px;
     width: auto !important;
 }
 .card-image{
     display: flex;
     justify-content: center;
+    overflow: hidden !important;
+    height: 225px;
+}
+
+.skillset-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.skillset-container > ul{
+    margin-top: 0;
+}
+
+/* Materialize */
+.card-content{
+    height: 150px;
 }
